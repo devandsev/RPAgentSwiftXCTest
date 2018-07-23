@@ -15,13 +15,12 @@
 		368751BE1F5867200021B74D /* RPResponseObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B71F5867200021B74D /* RPResponseObjects.swift */; };
 		368751BF1F5867200021B74D /* RPServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368751B81F5867200021B74D /* RPServices.swift */; };
 		368751E11F5964AA0021B74D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 368751E01F5964AA0021B74D /* README.md */; };
-		368751E31F596BC70021B74D /* RPAgentSwiftXCTest.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 368751E21F596BC70021B74D /* RPAgentSwiftXCTest.podspec */; };
 		368751E51F596E990021B74D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 368751E41F596E990021B74D /* LICENSE */; };
-		5E27702FEC2C81F9DE5237F7 /* Pods_RPAgentSwiftXCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B298DF4C300965F413082F68 /* Pods_RPAgentSwiftXCTest.framework */; };
+		B01888C921061A13002EC958 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01888C821061A13002EC958 /* Alamofire.framework */; };
+		B01888CB21061A19002EC958 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01888CA21061A19002EC958 /* AlamofireObjectMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D1E0E6351F9DD7719F920F3 /* Pods-RPAgentSwiftXCTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPAgentSwiftXCTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RPAgentSwiftXCTest/Pods-RPAgentSwiftXCTest.debug.xcconfig"; sourceTree = "<group>"; };
 		368751A51F5866CA0021B74D /* RPAgentSwiftXCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RPAgentSwiftXCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		368751A91F5866CA0021B74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		368751B21F5867200021B74D /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -32,10 +31,9 @@
 		368751B71F5867200021B74D /* RPResponseObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPResponseObjects.swift; sourceTree = "<group>"; };
 		368751B81F5867200021B74D /* RPServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPServices.swift; sourceTree = "<group>"; };
 		368751E01F5964AA0021B74D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		368751E21F596BC70021B74D /* RPAgentSwiftXCTest.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RPAgentSwiftXCTest.podspec; sourceTree = "<group>"; };
 		368751E41F596E990021B74D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		B298DF4C300965F413082F68 /* Pods_RPAgentSwiftXCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPAgentSwiftXCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9C58498C160E31E79526E34 /* Pods-RPAgentSwiftXCTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPAgentSwiftXCTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPAgentSwiftXCTest/Pods-RPAgentSwiftXCTest.release.xcconfig"; sourceTree = "<group>"; };
+		B01888C821061A13002EC958 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B01888CA21061A19002EC958 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E27702FEC2C81F9DE5237F7 /* Pods_RPAgentSwiftXCTest.framework in Frameworks */,
+				B01888C921061A13002EC958 /* Alamofire.framework in Frameworks */,
+				B01888CB21061A19002EC958 /* AlamofireObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +53,10 @@
 			isa = PBXGroup;
 			children = (
 				368751E41F596E990021B74D /* LICENSE */,
-				368751E21F596BC70021B74D /* RPAgentSwiftXCTest.podspec */,
 				368751E01F5964AA0021B74D /* README.md */,
 				368751A71F5866CA0021B74D /* RPAgentSwiftXCTest */,
 				368751A61F5866CA0021B74D /* Products */,
-				7D5FA0B8C6D6D72556763B1E /* Pods */,
-				5E2553DE125A922D314D9E51 /* Frameworks */,
+				B01888C721061A13002EC958 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,21 +83,13 @@
 			path = RPAgentSwiftXCTest;
 			sourceTree = "<group>";
 		};
-		5E2553DE125A922D314D9E51 /* Frameworks */ = {
+		B01888C721061A13002EC958 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B298DF4C300965F413082F68 /* Pods_RPAgentSwiftXCTest.framework */,
+				B01888CA21061A19002EC958 /* AlamofireObjectMapper.framework */,
+				B01888C821061A13002EC958 /* Alamofire.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7D5FA0B8C6D6D72556763B1E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1D1E0E6351F9DD7719F920F3 /* Pods-RPAgentSwiftXCTest.debug.xcconfig */,
-				D9C58498C160E31E79526E34 /* Pods-RPAgentSwiftXCTest.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,12 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 368751AD1F5866CA0021B74D /* Build configuration list for PBXNativeTarget "RPAgentSwiftXCTest" */;
 			buildPhases = (
-				3F10301566A52FB55C79DAB1 /* [CP] Check Pods Manifest.lock */,
 				368751A01F5866CA0021B74D /* Sources */,
 				368751A11F5866CA0021B74D /* Frameworks */,
 				368751A21F5866CA0021B74D /* Headers */,
 				368751A31F5866CA0021B74D /* Resources */,
-				72E300789815C8EEFD2C7A27 /* [CP] Copy Pods Resources */,
+				B01888CC21061A4E002EC958 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -177,45 +165,26 @@
 			files = (
 				368751E11F5964AA0021B74D /* README.md in Resources */,
 				368751E51F596E990021B74D /* LICENSE in Resources */,
-				368751E31F596BC70021B74D /* RPAgentSwiftXCTest.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3F10301566A52FB55C79DAB1 /* [CP] Check Pods Manifest.lock */ = {
+		B01888CC21061A4E002EC958 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RPAgentSwiftXCTest-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		72E300789815C8EEFD2C7A27 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RPAgentSwiftXCTest/Pods-RPAgentSwiftXCTest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -353,7 +322,6 @@
 		};
 		368751AE1F5866CA0021B74D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D1E0E6351F9DD7719F920F3 /* Pods-RPAgentSwiftXCTest.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -366,6 +334,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RPAgentSwiftXCTest/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -382,7 +351,6 @@
 		};
 		368751AF1F5866CA0021B74D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9C58498C160E31E79526E34 /* Pods-RPAgentSwiftXCTest.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -395,6 +363,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RPAgentSwiftXCTest/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
